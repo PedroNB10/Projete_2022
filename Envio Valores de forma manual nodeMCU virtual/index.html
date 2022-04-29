@@ -1,0 +1,57 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Testes com Ubidots</title>
+   
+</head>
+<body>
+<center><h1 id="main-title">Teste Valores fictícios dos MPUs</h1></center>
+
+<div class="main-container">
+    <script src="./script.js"> </script>
+    <label>Coloque no campo a seguir para simular o estado do botão:</label>
+    <input id="first-input"></input>
+    <br>
+    <br>
+    <label>Coloque no campo a seguir o valor para simular o sensor de umidade:</label>
+    <input id="second-input"></input>
+    <br>
+    <br>
+    <label>Para finalizar envio clique no botão:</label>
+    <button onclick="EnviarUbidots()"> ENVIAR </button>
+    <br>
+    <br>
+    <label id="resposta_de_envio"></label>
+    <h1>Receber dados do Ubidots</h1>
+    <label>Clique no botão para receber os dados do Ubidots:</label>
+    <button onclick="ReceberUbidotsMPU1(),ReceberUbidotsMPU2()"> RECEBER </button>
+    <br>
+    <br>
+    <label id="estado_aquecedor"></label>
+    <label id="resposta_de_recepcao1"></label>
+    <br>
+    <br>
+    <label id="estado_led"></label>
+    <label id="resposta_de_recepcao2"></label>
+    <h1>Link para dashboard:</h1>
+    <a
+        href="  https://stem.ubidots.com/app/dashboards/public/dashboard/m3E2-f_X0xl929ZBMc1wnj-6-aBI1FiBR-1_CgKlwes">https://stem.ubidots.com/app/dashboards/public/dashboard/m3E2-f_X0xl929ZBMc1wnj-6-aBI1FiBR-1_CgKlwes</a>
+    <br>
+
+</div>
+</body>
+</html>
